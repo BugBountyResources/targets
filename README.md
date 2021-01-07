@@ -3,7 +3,7 @@
 ![Logo](logo_bbr.png)
 
 Goal of this repo is to track changes in targets and add/remove new/old targets, in order to perform reconnaissance en-masse, by putting them all in one place.
-Could be useful to fingerprint vulnerable software by scanning all sub-domains and assets at once. Collecting all sub-domains at one place can make certain bulk operations like bulk vulnerability testing by fingerprinting/checking easy.
+Collecting all sub-domains at one place can make certain bulk operations like bulk vulnerability testing by fingerprinting easy, all at once!
 
 Also, it is supposed to work as a **mirror** for [ProjectDiscovery's public bug bounty assets recon data](https://chaos.projectdiscovery.io).
 
