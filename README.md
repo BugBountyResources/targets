@@ -12,8 +12,10 @@ Also, it is supposed to work as a **mirror** for [ProjectDiscovery's public bug 
 
 | File                 | Number of Assets     |
 |---------------------- | --------------------------|
-| [all_chunk00.txt](https://github.com/BugBountyResources/targets/raw/main/all_chunk00.txt)       | **1738471**               |
-| [all_chunk01.txt](https://github.com/BugBountyResources/targets/raw/main/all_chunk01.txt)       | **3371347**               |
+| [all_0.txt](https://github.com/BugBountyResources/targets/raw/main/all_0.txt)       | **2556493**               |
+| [all_1.txt](https://github.com/BugBountyResources/targets/raw/main/all_1.txt)       | **2556493**               |
+
+Total collected: **5112986** assets.
 
 
 ## Source of Data
