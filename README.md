@@ -7,6 +7,9 @@ Could be useful to fingerprint vulnerable software by scanning all sub-domains a
 
 Also, it is supposed to work as a **mirror** for [ProjectDiscovery's public bug bounty assets recon data](https://chaos.projectdiscovery.io).
 
+## Workflow
+  - Extract target data from [Chaos](https://chaos.projectdiscovery.io/), using the [targets_extract.py script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py)
+  - Push data to GitHub
 
 ## Stats
 ---
