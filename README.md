@@ -32,10 +32,10 @@ Data collected from [ProjectDiscovery's Chaos Project](https://chaos.projectdisc
 
 ### 🙌 Credits
 ---
-  - [Arif Khan](https://twitter.com/payloadartist) - conceived the idea of collecting all the data in one place, created the project and wrote the [extraction script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py). Also part of the [**BugBountyResources** team](https://github.com/BugBountyResources)
+  - [**Arif Khan**](https://twitter.com/payloadartist) - conceived the idea of collecting all the data in one place, created the project and wrote the [extraction script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py). Also part of the [**BugBountyResources** team](https://github.com/BugBountyResources)
 
-  - [ProjectDiscovery Team (Chaos)](https://twitter.com/pdchaos) - They own and made available this data! Massive thanks to the whole [ProjectDiscovery Team](https://projectdiscovery.io) for sharing updated reconnaissance data of Public Bug Bounty programs. 
+  - [**ProjectDiscovery Team (Chaos)**](https://twitter.com/pdchaos) - They own and made available this data! Massive thanks to the whole [ProjectDiscovery Team](https://projectdiscovery.io) for sharing updated reconnaissance data of Public Bug Bounty programs. 
   
-  - [Aryan Rupala](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
+  - [**Aryan Rupala((](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
 
-  - [You?](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, we will add all contributors to the **Credits** section.
+  - [**You?**](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, and you can be featured here in the **Credits** section!
