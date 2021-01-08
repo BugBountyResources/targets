@@ -44,12 +44,12 @@ collect_th.map_async(zip_collect, response.json())
 """
 Put them together into a single text file - all.txt
 Optionally, after completion of process remove all residual files - rm *.txt *.zip, except 'all.txt'
-Remove duplicates -> cat all.txt | sort -u > all_clean.txt
+Remove duplicates if any -> cat all.txt | sort -u > all_clean.txt
 """
 
 with open('all.txt', 'w') as out:
   for file in glob.glob('*.txt'):
+    if file != 'all.txt':
       with open(file, 'r') as inf:
         out.write(inf.read())
-      if file != 'all.txt': # clean up residual txt files (optional) from directory
-        os.remove(file)
+      os.remove(file) # clean up residual txt files (optional) from directory
