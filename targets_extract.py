@@ -1,5 +1,10 @@
+#!/usr/bin/python3
+# Author: Arif Khan (https://twitter.com/payloadartist)
+# Data extracted from Chaos (by ProjectDiscovery)
+
 import glob
 from multiprocessing.pool import ThreadPool
+import os
 import requests
 import zipfile
 
@@ -37,11 +42,14 @@ collect_th.map_async(zip_collect, response.json())
 
 """
 Put them together into a single text file - all.txt
-Optionally, after completion of process remove all residual files - rm *.txt *.zip
+Optionally, after completion of process remove all residual files - rm *.txt *.zip, except 'all.txt'
 Remove duplicates -> cat all.txt | sort -u > all_clean.txt
 """
 
 with open('all.txt', 'w') as out:
   for file in glob.glob('*.txt'):
       with open(file, 'r') as inf:
-          out.write(inf.read())
+        out.write(inf.read())
+      if file != 'all.txt': # clean up residual files (optional) from directory
+        os.remove(file)
+        os.remove(file.rstrip('txt')+'zip') # also remove zip files
