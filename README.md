@@ -15,11 +15,11 @@ Also, it is supposed to work as a **mirror** of the [ProjectDiscovery's public b
   - Extract target data from [Chaos](https://chaos.projectdiscovery.io/), using the [targets_extract.py script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py)
   - Push data to GitHub
 
-## Install & Usage
-  - Install repo using: git clone https://github.com/BugBountyResources/targets.git
-  - Navigate into the repo using: cd targets
-  - Give execute permissions to script: chmod +x target_extract.py
-  - Run script: ./target_extract.py
+## 🛠️ Install & Usage
+  - Install repo using: ```git clone https://github.com/BugBountyResources/targets.git```
+  - Navigate into the repo using: ```cd targets```
+  - Give execute permissions to script: ```chmod +x target_extract.py```
+  - Run script: ```./target_extract.py```
 
 ## 📊 Stats
 ---
@@ -43,5 +43,7 @@ Data collected from [ProjectDiscovery's Chaos Project](https://chaos.projectdisc
   - [**ProjectDiscovery Team (Chaos)**](https://twitter.com/pdchaos) - They own and made available this data! Massive thanks to the whole [ProjectDiscovery Team](https://projectdiscovery.io) for sharing updated reconnaissance data of Public Bug Bounty programs. 
   
   - [**Aryan Rupala**](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
+  
+  - [**PR3R00T**](https://twitter.com/Pr3R00T) - Gave useful insights, cleaned code, improved docs by adding Installation instructions and made an improvement for filtering out duplicates.
 
   - [**You?**](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, and you can be featured here in the [**Credits**](https://github.com/BugBountyResources/targets/blob/main/README.md#-credits) section!
