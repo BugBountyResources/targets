@@ -38,4 +38,4 @@ Data collected from [ProjectDiscovery's Chaos Project](https://chaos.projectdisc
   
   - [**Aryan Rupala**](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
 
-  - [**You?**](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, and you can be featured here in the **Credits** section!
+  - [**You?**](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, and you can be featured here in the [**Credits**](https://github.com/BugBountyResources/targets/blob/main/README.md#-credits) section!
