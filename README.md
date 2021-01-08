@@ -15,6 +15,12 @@ Also, it is supposed to work as a **mirror** of the [ProjectDiscovery's public b
   - Extract target data from [Chaos](https://chaos.projectdiscovery.io/), using the [targets_extract.py script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py)
   - Push data to GitHub
 
+## Install & Usage
+  - Install repo using: git clone https://github.com/BugBountyResources/targets.git
+  - Navigate into the repo using: cd targets
+  - Give execute permissions to script: chmod +x target_extract.py
+  - Run script: ./target_extract.py
+
 ## 📊 Stats
 ---
 
