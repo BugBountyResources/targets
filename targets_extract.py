@@ -39,7 +39,7 @@ def zip_collect(data):
   os.remove('{}.zip'.format(data['name'])) # Clean up zip files after extraction
 
 collect_th = ThreadPool(processes=30)
-collect_th.map_async(zip_collect, response.json()) 
+collect_th.map(zip_collect, response.json()) 
 
 """
 Put them together into a single text file - all.txt
@@ -52,4 +52,9 @@ with open('all.txt', 'w') as out:
     if file != 'all.txt':
       with open(file, 'r') as inf:
         out.write(inf.read())
+        """
+        A word of caution - Not suggested if you have other text files in the same directory,
+        this removes all *.txt files except all.txt, for cleanup. In case you don't want that,
+        add a '#' and comment out the line below
+        """
       os.remove(file) # clean up residual txt files (optional) from directory
