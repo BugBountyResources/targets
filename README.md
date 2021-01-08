@@ -36,6 +36,6 @@ Data collected from [ProjectDiscovery's Chaos Project](https://chaos.projectdisc
 
   - [**ProjectDiscovery Team (Chaos)**](https://twitter.com/pdchaos) - They own and made available this data! Massive thanks to the whole [ProjectDiscovery Team](https://projectdiscovery.io) for sharing updated reconnaissance data of Public Bug Bounty programs. 
   
-  - [**Aryan Rupala((](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
+  - [**Aryan Rupala**](https://twitter.com/aryan_2808) - Part of the [**BugBountyResources** team](https://github.com/BugBountyResources), who helps track down issues, shares ideas and also writes code.
 
   - [**You?**](https://github.com/BugBountyResources/targets/pulls) - Contribute to the project, and you can be featured here in the **Credits** section!
