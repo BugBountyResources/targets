@@ -35,7 +35,8 @@ def zip_collect(data):
  if data['bounty'] == True:
   download_url(data['URL'], './{}.zip'.format(data['name']))
   with zipfile.ZipFile('{}.zip'.format(data['name']), 'r') as zip_ref:
-    zip_ref.extractall('./'.format(data['name']))
+    zip_ref.extractall('./')
+    os.remove('{}.zip'.format(data['name'])) # Clean up zip files after extraction
 
 collect_th = ThreadPool(processes=30)
 collect_th.map_async(zip_collect, response.json()) 
@@ -50,6 +51,5 @@ with open('all.txt', 'w') as out:
   for file in glob.glob('*.txt'):
       with open(file, 'r') as inf:
         out.write(inf.read())
-      if file != 'all.txt': # clean up residual files (optional) from directory
+      if file != 'all.txt': # clean up residual txt files (optional) from directory
         os.remove(file)
-        os.remove(file.rstrip('txt')+'zip') # also remove zip files
