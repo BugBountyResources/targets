@@ -36,7 +36,7 @@ def zip_collect(data):
   download_url(data['URL'], './{}.zip'.format(data['name']))
   with zipfile.ZipFile('{}.zip'.format(data['name']), 'r') as zip_ref:
     zip_ref.extractall('./')
-    os.remove('{}.zip'.format(data['name'])) # Clean up zip files after extraction
+  os.remove('{}.zip'.format(data['name'])) # Clean up zip files after extraction
 
 collect_th = ThreadPool(processes=30)
 collect_th.map_async(zip_collect, response.json()) 
