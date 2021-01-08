@@ -58,3 +58,7 @@ with open('all.txt', 'w') as out:
         add a '#' and comment out the line below
         """
       os.remove(file) # clean up residual txt files (optional) from directory
+
+os.system("cat all.txt | sort | uniq > all2.txt")
+os.remove("all.txt")
+os.system("mv all2.txt all.txt")
