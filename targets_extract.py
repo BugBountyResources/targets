@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.6
 # Author: Arif Khan (https://twitter.com/payloadartist)
 # Data extracted from Chaos (by ProjectDiscovery)
 
