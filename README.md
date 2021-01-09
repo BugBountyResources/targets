@@ -15,11 +15,35 @@ Also, it is supposed to work as a **mirror** of the [ProjectDiscovery's public b
   - Extract target data from [Chaos](https://chaos.projectdiscovery.io/), using the [targets_extract.py script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py)
   - Push data to GitHub
 
-## 🛠️ Install & Usage
-  - Install repo using: ```git clone https://github.com/BugBountyResources/targets.git```
+## ⚙️ Install & Usage
+```
+root@bug-bounty:~/recon/assets# ./assets.py -h
+usage: assets.py [-h] [-d DIRECTORY] [-o OUTPUT] [-c PROCESSES]
+
+If needed, specify output directory or, file name. Example:
+./extract_targets.py -o assets.txt to store to ./output/assets.txt, optionally
+specify directory (./extract_targets.py -d mydir). Also, you can increase
+number of processes with -c flag to make it even faster.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DIRECTORY, --directory DIRECTORY
+                        Specify an output directory [Default: ./output]
+  -o OUTPUT, --output OUTPUT
+                        Specify an output file name [Default: all.txt]
+  -c PROCESSES, --processes PROCESSES
+                        Specify number of processes for faster extraction
+                        [Default: 30]
+  ```
+  - Clone the repo: ```git clone https://github.com/BugBountyResources/targets.git```
   - Navigate into the repo using: ```cd targets```
   - Give execute permissions to script: ```chmod +x target_extract.py```
-  - Run script: ```./target_extract.py```
+  - Run script: ```./targets_extract.py```
+  
+  ### 🛠️ Further Customize
+  - If you want to add more processes (for download & zip extraction), use the `-c` flag - `./targets_extract.py -c 60`
+  - If you want to output to custom file (saved to `output/all.txt` by default), you can specify the file name in `-o` flag - `./targets_extract.py -o custom.txt`
+  - If you want to store output in custom folder add an addition `-d` flag - `./targets_extract.py -d custom_directory`
 
 ## 📊 Stats
 ---
