@@ -2,11 +2,23 @@
 # Author: Arif Khan (https://twitter.com/payloadartist)
 # Data extracted from Chaos (by ProjectDiscovery)
 
+import argparse
 import glob
 from multiprocessing.pool import ThreadPool
 import os
 import requests
 import zipfile
+
+parser = argparse.ArgumentParser(description='If needed, specify output directory or, file name. Example: ./extract_targets.py -o assets.txt to store to ./output/assets.txt, optionally specify directory (./extract_targets.py -d mydir). Also, you can increase number of processes with -c flag to make it even faster.')
+parser.add_argument('-d','--directory', default='output',
+                    help='Specify an output directory [Default: ./output]')
+parser.add_argument('-o','--output',
+                    default='all.txt',
+                    help='Specify an output file name [Default: all.txt]')
+parser.add_argument('-c', '--processes',
+                    default='30', type=int,
+                    help='Specify number of processes for faster extraction [Default: 30]')
+args = parser.parse_args()
 
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
@@ -38,7 +50,7 @@ def zip_collect(data):
     zip_ref.extractall('./')
   os.remove('{}.zip'.format(data['name'])) # Clean up zip files after extraction
 
-collect_th = ThreadPool(processes=30)
+collect_th = ThreadPool(processes=args.processes)
 collect_th.map(zip_collect, response.json()) 
 
 """
@@ -47,9 +59,9 @@ Optionally, after completion of process remove all residual files - rm *.txt *.z
 Remove duplicates if any -> cat all.txt | sort -u > all_clean.txt
 """
 
-with open('all.txt', 'w') as out:
+with open('all_0.txt', 'w') as out:
   for file in glob.glob('*.txt'):
-    if file != 'all.txt':
+    if file != 'all_0.txt':
       with open(file, 'r') as inf:
         out.write(inf.read())
         """
@@ -59,6 +71,8 @@ with open('all.txt', 'w') as out:
         """
       os.remove(file) # clean up residual txt files (optional) from directory
 
-os.system("cat all.txt | sort | uniq > all2.txt")
-os.remove("all.txt")
-os.system("mv all2.txt all.txt")
+if not os.path.isdir(args.directory):
+    os.mkdir(args.directory)
+
+os.system("cat all_0.txt | sort | uniq > {}/{}".format(args.directory, args.output))
+os.remove("all_0.txt")
