@@ -9,7 +9,7 @@ import os
 import requests
 import zipfile
 
-parser = argparse.ArgumentParser(description='If needed, specify output directory or, file name. Example: ./extract_targets.py -o assets.txt to store to ./output/assets.txt, optionally specify directory (./extract_targets.py -d mydir). Also, you can increase number of processes with -c flag to make it even faster.')
+parser = argparse.ArgumentParser(description='If needed, specify output directory or, file name. Example: ./targets_extract.py -o assets.txt to store to ./output/assets.txt, optionally specify directory (./targets_extract.py -d mydir). Also, you can increase number of processes with -c flag to make it even faster.')
 parser.add_argument('-d','--directory', default='output',
                     help='Specify an output directory [Default: ./output]')
 parser.add_argument('-o','--output',
