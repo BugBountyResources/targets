@@ -28,7 +28,7 @@ def download_url(url, save_path, chunk_size=128):
 """
 Zip collector
 Download zip files. Extract them into .txt files
-Multi-threaded (30 threads run by default)
+Multi-process for faster performance (30 processes run by default)
 """
 
 def zip_collect(data):
