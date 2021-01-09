@@ -18,11 +18,11 @@ Also, it is supposed to work as a **mirror** of the [ProjectDiscovery's public b
 ## ⚙️ Install & Usage
 ```
 root@bug-bounty:~/recon/assets# ./targets_extract.py -h
-usage: assets.py [-h] [-d DIRECTORY] [-o OUTPUT] [-c PROCESSES]
+usage: targets_extract.py [-h] [-d DIRECTORY] [-o OUTPUT] [-c PROCESSES]
 
 If needed, specify output directory or, file name. Example:
-./extract_targets.py -o assets.txt to store to ./output/assets.txt, optionally
-specify directory (./extract_targets.py -d mydir). Also, you can increase
+./targets_extract.py -o assets.txt to store to ./output/assets.txt, optionally
+specify directory (./targets_extract.py -d mydir). Also, you can increase
 number of processes with -c flag to make it even faster.
 
 optional arguments:
@@ -37,7 +37,7 @@ optional arguments:
   ```
   - Clone the repo: ```git clone https://github.com/BugBountyResources/targets.git```
   - Navigate into the repo using: ```cd targets```
-  - Give execute permissions to script: ```chmod +x target_extract.py```
+  - Give execute permissions to script: ```chmod +x targets_extract.py```
   - Run script: ```./targets_extract.py```
   
   ### 🛠️ Further Customize
