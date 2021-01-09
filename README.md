@@ -17,7 +17,7 @@ Also, it is supposed to work as a **mirror** of the [ProjectDiscovery's public b
 
 ## ⚙️ Install & Usage
 ```
-root@bug-bounty:~/recon/assets# ./assets.py -h
+root@bug-bounty:~/recon/assets# ./targets_extract.py -h
 usage: assets.py [-h] [-d DIRECTORY] [-o OUTPUT] [-c PROCESSES]
 
 If needed, specify output directory or, file name. Example:
