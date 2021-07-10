@@ -62,7 +62,7 @@ Data collected from [ProjectDiscovery's Chaos Project](https://chaos.projectdisc
 
 ### 🙌 Credits
 ---
-  - [**Arif Khan**](https://twitter.com/payloadartist) - conceived the idea of collecting all the data in one place, created the project and wrote the [extraction script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py). Also part of the [**BugBountyResources** team](https://github.com/BugBountyResources)
+  - [**@payloadartist**](https://twitter.com/payloadartist) - conceived the idea of collecting all the data in one place, created the project and wrote the [extraction script](https://github.com/BugBountyResources/targets/blob/main/targets_extract.py). Also part of the [**BugBountyResources** team](https://github.com/BugBountyResources)
 
   - [**ProjectDiscovery Team (Chaos)**](https://twitter.com/pdchaos) - They own and made available this data! Massive thanks to the whole [ProjectDiscovery Team](https://projectdiscovery.io) for sharing updated reconnaissance data of Public Bug Bounty programs. 
   
