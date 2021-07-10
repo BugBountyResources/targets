@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Author: Arif Khan (https://twitter.com/payloadartist)
+# Author: @payloadartist
 # Data extracted from Chaos (by ProjectDiscovery)
 
 import argparse
